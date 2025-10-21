@@ -49,3 +49,18 @@ boto3==1.29.7
 azure-identity==1.15.0
 azure-monitor-query==1.2.0
 google-cloud-logging==3.8.0
+
+# Natural Language Processing
+sentence-transformers==2.2.2
+chromadb==0.4.18
+
+# Explainable AI
+shap==0.43.0
+lime==0.2.0.1
+
+# Graph Analysis
+networkx==3.2.1
+py2neo==2021.2.3
+
+# SIEM Integration
+splunk-sdk==1.7.4

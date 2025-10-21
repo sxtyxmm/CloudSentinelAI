@@ -385,11 +385,11 @@ For issues, questions, or contributions:
 - [x] Multi-cloud log ingestion
 - [x] Real-time dashboard
 - [x] Automated alerting
-- [ ] Natural language querying
-- [ ] Graph-based threat analysis
-- [ ] Explainable AI (SHAP/LIME)
-- [ ] Predictive threat modeling
-- [ ] SIEM integration (Splunk, Elastic)
+- [x] Natural language querying
+- [x] Graph-based threat analysis
+- [x] Explainable AI (SHAP/LIME)
+- [x] Predictive threat modeling
+- [x] SIEM integration (Splunk, Elastic)
 
 ## Acknowledgments
 

@@ -7,7 +7,10 @@ from fastapi.responses import JSONResponse
 import structlog
 from contextlib import asynccontextmanager
 
-from app.api import alerts, threats, auth, dashboard, models as models_api
+from app.api import (
+    alerts, threats, auth, dashboard, models as models_api,
+    nlp, explainability, graph, predictive, siem
+)
 from app.core.config import settings
 from app.core.database import init_db
 
@@ -75,3 +78,8 @@ app.include_router(alerts.router, prefix="/api/v1/alerts", tags=["Alerts"])
 app.include_router(threats.router, prefix="/api/v1/threats", tags=["Threats"])
 app.include_router(dashboard.router, prefix="/api/v1/dashboard", tags=["Dashboard"])
 app.include_router(models_api.router, prefix="/api/v1/models", tags=["ML Models"])
+app.include_router(nlp.router, prefix="/api/v1/nlp", tags=["Natural Language"])
+app.include_router(explainability.router, prefix="/api/v1/explainability", tags=["Explainability"])
+app.include_router(graph.router, prefix="/api/v1/graph", tags=["Graph Analysis"])
+app.include_router(predictive.router, prefix="/api/v1/predictive", tags=["Predictive"])
+app.include_router(siem.router, prefix="/api/v1/siem", tags=["SIEM Integration"])
